@@ -22,7 +22,7 @@ public class AiPlayer extends Player {
         }
     }
 
-    private int findBestCol() {
+    private int findBestCol() {//// Ai Checker
 
         Piece[][] tempPiece = board.getPieces();
         int column;
@@ -54,32 +54,32 @@ public class AiPlayer extends Player {
                     return 5;
                 }
             } else if (tempPiece[3][i] == tempPiece[2][i] && tempPiece[2][i] == tempPiece[1][i] && tempPiece[3][i] == Piece.GREEN) {
-                System.out.println("come green 0");
+               // System.out.println("come green 0");
                 if (tempPiece[0][i] == Piece.EMPTY) {
                     return 0;
                 }
             } else if (tempPiece[3][i] == tempPiece[2][i] && tempPiece[2][i] == tempPiece[1][i] && tempPiece[3][i] == Piece.BLUE) {
-                System.out.println("come blue 0");
+               // System.out.println("come blue 0");
                 if (tempPiece[0][i] == Piece.EMPTY) {
                     return 0;
                 }
             } else if (tempPiece[4][i] == tempPiece[3][i] && tempPiece[3][i] == tempPiece[2][i] && tempPiece[3][i] == Piece.GREEN) {
-                System.out.println("come green 1");
+               // System.out.println("come green 1");
                 if (tempPiece[1][i] == Piece.EMPTY) {
                     return 1;
                 }
             } else if (tempPiece[4][i] == tempPiece[3][i] && tempPiece[3][i] == tempPiece[2][i] && tempPiece[3][i] == Piece.BLUE) {
-                System.out.println("come blue 1");
+               // System.out.println("come blue 1");
                 if (tempPiece[1][i] == Piece.EMPTY) {
                     return 1;
                 }
             } else if (tempPiece[5][i] == tempPiece[4][i] && tempPiece[4][i] == tempPiece[3][i] && tempPiece[5][i] == Piece.GREEN) {
-                System.out.println("come green 2");
+               // System.out.println("come green 2");
                 if (tempPiece[2][i] == Piece.EMPTY) {
                     return 2;
                 }
             } else if (tempPiece[5][i] == tempPiece[4][i] && tempPiece[4][i] == tempPiece[3][i] && tempPiece[5][i] == Piece.BLUE) {
-                System.out.println("come blue 2");
+              //  System.out.println("come blue 2");
                 if (tempPiece[2][i] == Piece.EMPTY) {
                     return 2;
                 }
